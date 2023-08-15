@@ -1,0 +1,610 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #eb9735;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  /* jjjjjjjjjjjjjjjjjj */
+}
+
+/* chung */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  align-items: center;
+  background-color: #ffde59;
+  box-shadow: 1px 8px 6px 0px rgba(134, 134, 67, 0.26);
+  -webkit-box-shadow: 1px 8px 6px 0px rgba(134, 134, 67, 0.26);
+  -moz-box-shadow: 1px 8px 6px 0px rgba(134, 134, 67, 0.26);
+}
+
+/* ============================  MENU   ================================== */
+.navbar .menu {
+  display: flex;
+
+  gap: 30px;
+}
+
+.navbar .navigation {
+  margin: 0 auto;
+  z-index: 2;
+}
+.navbar .navigation .menu a {
+  font-weight: 500;
+}
+
+.navbar .menu a {
+  font-weight: 900;
+  font-size: 2.7rem;
+  line-height: 21px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu > li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 32px;
+  left: -12px;
+  width: 180px;
+  background: white;
+  display: none;
+  border: 2px solid black;
+
+  /* border-radius: 10px; */
+}
+
+.navbar .menu > li {
+  display: inline-block;
+  position: relative;
+  margin: 0px 12px;
+  /* border-bottom: 10px; */
+  padding-bottom: 10px;
+}
+/* === */
+.sub-menu a {
+  color: black;
+  display: block;
+  padding: 15px 16px;
+  padding: relative;
+}
+
+.sub-menu li:hover {
+  background: #ffde59;
+  /* w159 */
+  /* border-radius: 10px; */
+  /* border: 0 solid black; */
+}
+
+/* ====================== ACTION  ======================= */
+.navbar .action {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 21px;
+  padding-bottom: 10px;
+}
+
+.navbar .action a {
+  margin-right: 20px;
+
+  color: black;
+}
+
+header .slide img {
+  width: 100%;
+  height: 720px;
+  /* object-fit: cover; */
+  background-size: cover;
+  border-bottom: 5px dashed black;
+  /* background-position: center center; */
+  margin-top: 10px;
+  /* border-radius: 76px 75px 73px 74px;
+  -webkit-border-radius: 76px 75px 73px 74px;
+  -moz-border-radius: 76px 75px 73px 74px;
+} */
+}
+
+/*  ========================  THÂN BÀI ================================= */
+article {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+/* item */
+article .new-item {
+  display: inline-block;
+  min-width: 500px;
+  height: 324px;
+  background-color: #c1ff72;
+  border-radius: 15px;
+  margin-top: 40px;
+  border: 2px solid bisque;
+  box-shadow: 16px 5px 51px -12px rgba(51, 183, 82, 0.92);
+  -webkit-box-shadow: 16px 5px 51px -12px rgba(51, 183, 82, 0.92);
+  -moz-box-shadow: 16px 5px 51px -12px rgba(51, 183, 82, 0.92);
+}
+
+article .new-item h4 {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 900;
+  justify-content: center;
+}
+
+article .new-item p {
+  display: flex;
+  justify-content: center;
+  width: 477px;
+  height: 170px;
+  font-size: 2rem;
+  margin-left: 18px;
+  margin-top: 15px;
+  line-height: 1.3;
+}
+/* img */
+article .new-img img {
+  display: inline-block;
+  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  width: 375px;
+  height: 316px;
+  margin-top: 40px;
+  border: 5px dashed black;
+}
+
+/* ---------------------------   artical - 2   ----------------------------- */
+article-2 {
+  display: flex;
+  background-color: #ffde59;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  /* max-height: 400px; */
+}
+
+article-2 .img1-p {
+  margin-top: 150px;
+}
+
+.p-center {
+  border: 4px dashed;
+  border-radius: 20px;
+}
+
+article-2 .p-center {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #ffde59;
+  margin-top: 20px;
+}
+
+.p-center h3 {
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 20px;
+  max-width: 751px;
+  color: #31409a;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.p-center p {
+  display: block;
+  max-width: 697px;
+  margin: 0 auto;
+  line-height: 1.35;
+  text-align: left;
+  font-size: 2rem;
+  color: #263238;
+  padding: 5px 10px;
+
+  font-weight: 550;
+  padding-bottom: 20px;
+}
+
+/* ========================  ARTICAL - 3  ======================= */
+
+artical-3 {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 35px;
+
+  /* margin-left: 80px; */
+}
+/* ========================== chuong trinh hoc  ======================================== */
+.khoahoc {
+  background-color: #ffde59;
+  padding: 20px;
+}
+
+.khoahoc h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #31409a;
+}
+
+/* ================================================================== */
+artical-4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+artical-4 .img-artical4 img {
+  width: 60%;
+  object-fit: cover;
+  width: 354px;
+  height: 340px;
+  margin-top: 70px;
+}
+
+artical-4 .content-1 {
+  max-width: 23%;
+  padding: 3%;
+  background-color: #c1ff72;
+  border-radius: 20px;
+
+  margin-top: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+artical-4 .content-1 h3 {
+  font-weight: 600;
+  color: blue;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+
+artical-4 .content-1 img {
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+artical-4 .content-1 .content-p {
+  font-size: 2rem;
+  /* padding: 10px 10px; */
+}
+
+/* ======================================= */
+
+.chinhsach {
+  margin-top: 30px;
+  background-color: #ffde59;
+  padding: 20px;
+}
+
+.chinhsach h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #31409a;
+}
+
+/* ==================== artical 5 ================================ */
+article-5 .paragraph5 {
+  /* border: 1px solid black; */
+  max-width: 905px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 120px;
+  border: 6px dotted black;
+  padding: 10px;
+}
+
+article-5 .paragraph5 h4 {
+  color: #31409a;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+article-5 .paragraph5 p {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+/* ==================== footer================================ */
+footer {
+  display: flex;
+  background-color: #d9d9d9;
+  width: 100%;
+  min-height: 209px;
+  padding-bottom: 60px;
+}
+
+footer .info {
+  max-width: 450px;
+  margin-top: 27px;
+  margin-left: 80px;
+}
+
+footer .info h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #31409a;
+}
+
+footer .info p {
+  font-size: 2rem;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+footer .contact {
+  max-width: 450px;
+  margin-top: 27px;
+  margin-left: 90px;
+}
+
+footer .contact h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #31409a;
+  padding-bottom: 15px;
+}
+
+footer .contact ul a {
+  font-size: 2rem;
+  margin-top: 15px;
+  line-height: 1.4;
+  color: black;
+}
+
+footer .footer-img {
+  margin-top: 27px;
+  object-fit: cover;
+  margin-left: 70px;
+}
+
+/* =======================  blog2222222222222222222222222  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+/* =======================  blog  ================================ */
+
+.title-blog {
+  display: inline;
+  margin-top: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-blog h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: blue;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.title-blog p {
+  z-index: 1000;
+  font-size: 3rem;
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 20px;
+}
+
+content-blog {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}
+content-blog h2 {
+  font-size: 2rem;
+  margin: 30px 0 10px;
+}
+
+/* wrapper-content-blog======================================================== */
+wrapper-content-blog {
+  display: block;
+  max-width: 1309px;
+  margin: 0 auto;
+}
+
+.p {
+  font-size: 2.6rem;
+  margin-left: 124px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  color: #31409a;
+}
+
+wrapper-content-blog {
+  display: flex;
+}
+
+artical-blog2 .blog2 {
+  display: flex;
+}
+
+wrapper-content-blog artical-blog1 {
+  padding-right: 35px;
+}
+
+wrapper-content-blog artical-blog1 .blog1 p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+wrapper-content-blog artical-blog2 {
+  max-height: 476px;
+}
+wrapper-content-blog artical-blog2 .blog2 img {
+  display: flex;
+  object-fit: cover;
+  margin-bottom: 23px;
+  border-radius: 10%;
+}
+
+wrapper-content-blog artical-blog2 .blog2 p {
+  font-size: 2rem;
+  /* display: flex;
+  align-items: flex-start; */
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+/* ================================ content - blog ====================== */
+content-blog {
+  display: flex;
+  max-width: 736px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+content-blog content-blog1 .content-blog1 {
+  padding-bottom: 35px;
+}
+
+content-blog content-blog1 .content-blog1 img {
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+content-blog content-blog1 .content-blog1 h3 {
+  margin-bottom: 18px;
+}
+content-blog content-blog1 .content-blog1 a {
+  color: #31409a;
+  font-size: 2.7rem;
+  padding-bottom: 170px;
+}
+
+content-blog2 .img-blog2 {
+  margin-left: 360px;
+  object-fit: cover;
+  /* margin-top: 200px; */
+  padding-top: 262px;
+}
+
+/* ============================= blog3.html =============================== */
+/* ============================= blog3.html =============================== */
+/* ============================= blog3.html =============================== */
+/* ============================= blog3.html =============================== */
+/* ============================= blog3.html =============================== */
+/* ============================= blog3.html =============================== */
+span a {
+  color: green;
+  font-weight: 800;
+}
+/* ============================= blog3.html =============================== */
+/* .content {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffde59;
+  padding: 0 20px 0 20px;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+} */
+content-blog3 {
+  display: inline-block;
+  max-width: 780px;
+  margin-left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+
+  background: #ffde59;
+  padding: 0 20px 0 20px;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+content-blog3 h1 {
+  display: inline-block;
+  margin-top: 30px;
+  color: #31409a;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+content-blog3 .title img {
+  border-radius: 5%;
+  object-fit: cover;
+  margin-top: 5%;
+}
+
+content-blog3 .title p {
+  display: block;
+  background-color: #f5f5f5;
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 16px;
+  border-radius: 20px;
+  line-height: 1.2;
+}
+
+content-blog3 .content {
+  margin-top: 30px;
+}
+
+content-blog3 .content h2 {
+  color: #31409a;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+content-blog3 .content p {
+  padding-bottom: 20px;
+  line-height: 1.2;
+}
+
+content-blog3 .content img {
+  border-radius: 5%;
+  object-fit: cover;
+  margin-top: 5%;
+  padding-bottom: 50px;
+}

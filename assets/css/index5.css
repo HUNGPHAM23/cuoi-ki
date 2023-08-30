@@ -11,8 +11,25 @@ body {
   background-color: #eb9735;
   position: relative;
   font-family: "Roboto", sans-serif;
-
   /* jjjjjjjjjjjjjjjjjj */
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.scroll-to-top:hover {
+  background-color: #333;
 }
 
 /* chung */
@@ -28,8 +45,7 @@ a:hover {
 .navbar {
   display: flex;
   position: fixed;
-  z-index: 2;
-
+  z-index: 1000;
   width: 100%;
   align-items: center;
   background-color: #ffde59;
@@ -38,16 +54,24 @@ a:hover {
   -moz-box-shadow: 1px 8px 6px 0px rgba(134, 134, 67, 0.26);
 }
 
+.main-content {
+  padding-top: 100px;
+  width: 1170px;
+  min-width: calc(100% -48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ============================  MENU   ================================== */
 .navbar .menu {
   display: flex;
-  position: relative;
 
   gap: 30px;
 }
 
 .navbar .navigation {
   margin: 0 auto;
+  z-index: 2;
 }
 .navbar .navigation .menu a {
   font-weight: 500;
@@ -110,6 +134,30 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.navbar .btnLogin-popup {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 21px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.navbar .btnLogin-popup::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  opacity: 0.85;
+}
+
 .navbar .action a {
   margin-right: 20px;
 
@@ -119,6 +167,7 @@ a:hover {
 header .slide img {
   width: 100%;
   height: 720px;
+  /* object-fit: cover; */
   background-size: cover;
   border-bottom: 5px dashed black;
   /* background-position: center center; */
@@ -128,161 +177,49 @@ header .slide img {
     -moz-border-radius: 76px 75px 73px 74px;
   } */
 }
-/*11 ============================= THÂN BÀI =========================11 */
-.content {
-  width: 1110px;
-  max-width: calc(100% - 48px);
-  margin-left: auto;
-  margin-right: auto;
+
+/*  ========================  THÂN BÀI ================================= */
+
+.chung {
+  align-items: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #ffde59;
+  border-radius: 20px;
+  padding: 30px;
 }
 
-.clients h1 {
-  /* background-image: url(https://lapo.edu.vn/public/resources/images/courses-title-page.png);
-  display: inline-block;
-  margin-top: 100px;
-  margin-left: 42%;
-  font-size: 3.3rem;
-  max-width: 203px;
-  border-radius: 10px;
-  background-color: #d9d9d9;
-  padding: 10px 15px; */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  color: white;
-  font-weight: 900;
-  font-size: 3.5rem;
-  background-color: #31409a;
-  margin-bottom: 50px;
+.teacher-info .teacher + .teacher {
+  margin-top: 40px;
 }
 
-.clients .hero {
-  display: flex;
-  gap: 40px;
-}
-.clients .hero .hero-1 {
-  max-width: 520px;
-  border: 4px solid #31409a;
-}
-
-.clients .hero .hero-1 .padding {
-  padding: 20px;
-}
-
-.clients .hero .hero-1 .kindy {
-  background: #ffde59;
-  color: #31409a;
-  padding: 0.3em 1.5em;
-  border-radius: 47px;
-  position: absolute;
-  display: block;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 24px;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  font-weight: 900;
-  z-index: 1;
-}
-
-.clients .hero .hero-1 .junior {
-  background: #ffde59;
-  color: #31409a;
-  padding: 0.3em 1.5em;
-  border-radius: 47px;
-  position: absolute;
-  display: block;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 24px;
-  right: 15.5%;
-  transform: translate(-50%, -50%);
-  font-weight: 900;
-}
-
-.clients .hero .hero-1 h3 {
-  margin-top: 20px;
-  /* margin-left: 10px; */
-  font-size: 1.9rem;
-  color: #2a5aa5;
-  font-weight: 600;
-}
-
-.clients .hero .hero-1 p {
-  margin-top: 15px;
-  line-height: 1.4;
-}
-
-/* ======================== column ========================= */
-
-.column {
-  margin-top: 50px;
-}
-
-.column h2 {
-  display: block;
-  text-align: center;
-  font-size: 2.5rem;
-  background: #ffde59;
-  color: #31409a;
-  padding-top: 30px;
-  padding-bottom: 30px;
+h5 {
+  color: #1934cc;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
-.column .column-1 h3,
-.column .column-2 h3 {
-  display: inline-block;
-  text-align: center;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  font-size: 3rem;
-  font-weight: 700;
-  border: 5px solid black;
-  min-width: 300px;
-  padding: 10px 0;
-  color: white;
-  border-radius: 20px;
-  background-color: #2a5aa5;
-}
-
-.column .column-1 h4,
-.column .column-2 h4 {
-  color: #1b5dc8;
-  font-size: 2rem;
+h6 {
+  color: #1934cc;
+  font-size: 1.8rem;
   margin-bottom: 10px;
-  margin-top: 10px;
 }
 
-.column .column-1 .hang,
-.column .column-2 .hang {
-  margin-top: 20px;
-  border: 3px solid #31409a;
-  border-radius: 20px;
-  padding: 20px;
+span {
+  color: red;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
-
-.column .column-1 .hang p,
-.column .column-2 .hang p {
-  line-height: 1.5;
-}
-
-.column .column-2 {
-  margin-top: 30px;
-}
-
-/*22 ============================= THÂN BÀI ========================= 22*/
+/* ========================  ARTICAL - 3  ======================= */
 
 /* ==================== footer================================ */
 footer {
   display: flex;
+  margin-top: 100px;
   background-color: #d9d9d9;
   width: 100%;
-  min-height: 209px;
+
   padding-bottom: 60px;
-  margin-top: 60px;
 }
 
 footer .info {
@@ -325,5 +262,8 @@ footer .contact ul a {
 
 footer .footer-img {
   margin-top: 27px;
+  object-fit: cover;
   margin-left: 70px;
 }
+
+/* =======================  - ================================ */

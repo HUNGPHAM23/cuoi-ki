@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
       rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Khóa Học</title>
   </head>
   <body>
@@ -21,14 +22,14 @@
       <nav class="navbar">
         <!-- //////////////////////////////////////////logo ///////////////////////////////////-->
         <div class="logo">
-          <a href="./index.html"
+          <a href="./index2.php"
             ><img
               src="https://hungphamsdss.my.canva.site/videos/043704edd8d6fdfdeeb072eb51c20de6.gif"
               width="220px"
               height="77px"
               alt="logo"
           /></a>
-          <a href="./index.html"
+          <a href="./index2.php"
             ><img
               src="https://hungphamsdss.my.canva.site/images/7bb1b4bce95ae757913178be78838fbf.png"
               width="101"
@@ -40,7 +41,7 @@
         <!--///////////////////////////////////////////// navigation////////////////////////////////////// -->
         <div class="navigation">
           <ul class="menu">
-            <li><a href="./index.html">Trang Chủ</a></li>
+            <li><a href="./index2.php">Trang Chủ</a></li>
             <li>
               <a href="#!">Danh Mục</a>
               <ul class="sub-menu">
@@ -49,10 +50,10 @@
                     >Trò Chơi</a
                   >
                 </li>
-                <li><a href="./blog2.html">Blog</a></li>
+                <li><a href="./blog2.php">Blog</a></li>
               </ul>
             </li>
-            <a href="./khoahoc.html">Khóa Học</a>
+            <a href="./khoahoc.php">Khóa Học</a>
             <!-- <li>
               <a href="#!">Khóa Học</a>
               <ul class="sub-menu">
@@ -65,7 +66,7 @@
 
         <!--/////////////////////////////////////// action //////////////////////////////////////////////////-->
         <div class="action">
-          <a style="text-decoration: none" href="./login.php">Tài Khoản</a>
+            <a style="text-decoration: none" href="#">Hồ sơ của tôi</a><i class='bx bx-user-circle'></i>
         </div>
       </nav>
     </header>
